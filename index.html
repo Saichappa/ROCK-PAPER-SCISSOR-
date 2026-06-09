@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper & Scissor</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <h2>Rock Paper & Scissor</h2>
+        <div id="scoreboard">
+    <h3>First to 3 Wins (Best of 5)</h3>
+    <p>Player: <span id="playerScore">0</span> / 3</p>
+    <p>Computer: <span id="computerScore">0</span> / 3</p>
+    <p>Ties: <span id="tieScore">0</span></p>
+    <button onclick="resetMatch()">Play Again</button>
+</div>
+        <!-- PLAYER CHOICES -->
+        <div class="choice-btn" onclick="playGame('rock')">
+            <img src="rock.png" alt="Rock" width="80" height="80">
+            <h5>Rock</h5>
+        </div>
+
+        <div class="choice-btn" onclick="playGame('paper')">
+            <img src="paper.png" alt="Paper" width="80" height="80">
+            <h5>Paper</h5>
+        </div>
+
+        <div class="choice-btn" onclick="playGame('scissor')">
+            <img src="scissor.jpg" alt="Scissor" width="80" height="80">
+            <h5>Scissor</h5>
+        </div>
+
+        <!-- DYNAMIC RESULT SCREEN (No Video) -->
+        <div id="result">
+            <h3>Computer Chose: <span id="computerChoice"></span></h3>
+            <img id="computerImage" src="" alt="Computer Choice" width="200" height="150">
+            <p id="resultText"></p>
+        </div>
+      
+
+
+    </div>
+
+    <!-- Link to external JavaScript logic -->
+    <script src="script.js"></script>
+</body>
+</html>

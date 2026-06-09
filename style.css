@@ -1,0 +1,94 @@
+/* Premium Professional Color Overhaul */
+body {
+    background-color: #f3f4f6; /* Modern, executive light-gray canvas */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    color: #1f2937; /* Dark charcoal text for maximum contrast and legibility */
+    margin: 0;
+    padding: 0;
+}
+
+#game {
+    text-align: center;
+    margin: 60px auto;
+    padding: 40px 20px;
+    max-width: 800px;
+    background-color: #ffffff; /* Brilliant white panel card */
+    border-radius: 12px;
+    /* Soft, multi-layered depth shadows */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.02); 
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+}
+
+.choice-btn {
+    display: inline-block;
+    margin: 15px;
+    /* Clean, fine-ruled administrative borders */
+    border: 1px solid #e5e7eb; 
+    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 24px;
+    cursor: pointer;
+    width: 140px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Sophisticated interactive hovering */
+.choice-btn:hover {
+    transform: translateY(-3px); /* Subtle crisp physics feedback */
+    border-color: #9ca3af; /* Darkens border to highlight selected node */
+    background-color: #f9fafb; /* Extremely light slate tint on hover */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.choice-btn img {
+    object-fit: contain;
+    mix-blend-mode: multiply; /* Integrates graphic backgrounds seamlessly */
+}
+
+.choice-btn h5 {
+    margin: 14px 0 0 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4b5563;
+}
+
+/* Polished Results Section */
+#result {
+    display: none; /* Controlled by script.js engine */
+    margin-top: 40px;
+    padding: 30px;
+    /* Elegant executive top border accent */
+    border-top: 2px solid #f3f4f6; 
+    background-color: #fafafa;
+    border-radius: 0 0 12px 12px;
+}
+
+#result h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+#computerChoice {
+    font-weight: 700;
+    color: #2563eb; /* Corporate executive blue accents */
+}
+
+#computerImage {
+    margin: 10px 0;
+    mix-blend-mode: multiply;
+}
+
+#resultText {
+    font-size: 1.25rem;
+    margin-top: 15px;
+    font-weight: bold;
+}
